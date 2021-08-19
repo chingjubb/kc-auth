@@ -1,3 +1,5 @@
+require "jwt"
+
 module Kc
   module Common
     class PublicKeyResolver
