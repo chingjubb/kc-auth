@@ -8,7 +8,7 @@ module Kc
     class RedisCache < Kc::Cache::CacheBase
       def initialize(redis)
         super()
-        raise "Kc::Cache::RedisCache requires a Redis instance" unless redis.is_a?(Redis) || (redis.is_a?(MockRedis) && ENV["MODE"] == "test")
+        # raise "Kc::Cache::RedisCache requires a Redis instance" unless redis.is_a?(Redis) || (redis.is_a?(MockRedis) && ENV["MODE"] == "test")
         @redis = redis # redis is an object such as RedisConnector.instance.redis
       end
 

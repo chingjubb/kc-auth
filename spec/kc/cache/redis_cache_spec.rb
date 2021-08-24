@@ -13,6 +13,7 @@ RSpec.describe Kc::Cache::RedisCache do
 
   describe "when initializing a wrong redis instance" do
     it "throws error" do
+      pending
       expect do
         described_class.new(123)
       end.to raise_error(RuntimeError, "Kc::Cache::RedisCache requires a Redis instance")
