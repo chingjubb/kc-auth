@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "httparty"
-  spec.add_dependency "jwt", ">=2.2.0"
+  spec.add_dependency "jwt"
   spec.add_dependency "mock_redis"
   spec.add_dependency "rack", ">= 2.0"
   spec.add_dependency "rails", ">= 4.2"
